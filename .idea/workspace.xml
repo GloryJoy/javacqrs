@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b02fbca7-bb74-425a-a799-85700a23f17e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/api/commands/AccountCommandHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/api/commands/CloseAccountCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/api/commands/CommandHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/api/commands/DepositFundCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/api/commands/OpenAccountCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/api/commands/WithdrawFundCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/domain/AccountAggregate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/domain/EventStoreRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/infrastructure/AccountCommandDispatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/infrastructure/AccountEventProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/infrastructure/AccountEventSourcingHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/infrastructure/AccountEventStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.command/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.common/src/main/java/com/joyful/java/cqrs/account/common/dto/AccountType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.common/src/main/java/com/joyful/java/cqrs/account/common/events/AccountClosedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.common/src/main/java/com/joyful/java/cqrs/account/common/events/AccountDepositedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.common/src/main/java/com/joyful/java/cqrs/account/common/events/AccountOpenedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.common/src/main/java/com/joyful/java/cqrs/account/common/events/FundWithdrawnEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.query/src/main/java/com/joyful/java/cqrs/account/query/domain/AccountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.query/src/main/java/com/joyful/java/cqrs/account/query/domain/BankAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.query/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2JlJpvQgv3I8aIIMZDTx1CCP5IV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "/Volumes/Joy/projects/java/CQRS/bank-account/account.query/src/main/java/com/joyful/java/cqrs/account/query",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "file.status.colors",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/account.query/src/main/java/com/joyful/java/cqrs/account/query" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b02fbca7-bb74-425a-a799-85700a23f17e" name="Changes" comment="" />
+      <created>1672646924438</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672646924438</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
