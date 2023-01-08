@@ -2,9 +2,9 @@ package com.joyful.java.cqrs.account.command.domain;
 
 import com.joyful.java.cqrs.account.command.api.commands.OpenAccountCommand;
 import com.joyful.java.cqrs.account.common.events.AccountClosedEvent;
-import com.joyful.java.cqrs.account.common.events.AccountDepositedEvent;
+import com.joyful.java.cqrs.account.common.events.AccountFundDepositedEvent;
 import com.joyful.java.cqrs.account.common.events.AccountOpenedEvent;
-import com.joyful.java.cqrs.account.common.events.FundWithdrawnEvent;
+import com.joyful.java.cqrs.account.common.events.AccountFundWithdrawnEvent;
 import com.joyful.java.cqrs.core.domain.AgreegateRoot;
 import lombok.NoArgsConstructor;
 
@@ -45,14 +45,14 @@ public class AccountAggregate extends AgreegateRoot {
             throw new IllegalStateException("The deposit amount must be greater than zero");
         }
 
-        raiseEvent(AccountDepositedEvent
+        raiseEvent(AccountFundDepositedEvent
                 .builder()
                 .id(this.id)
                 .amount(amount)
                 .build() );
     }
 
-    public void apply(AccountDepositedEvent event){
+    public void apply(AccountFundDepositedEvent event){
         this.id = event.getId();
         this.balance += event.getAmount();
     }
@@ -67,14 +67,14 @@ public class AccountAggregate extends AgreegateRoot {
             throw new IllegalStateException("The amount must be greater than 0");
         }
 
-        raiseEvent(FundWithdrawnEvent
+        raiseEvent(AccountFundWithdrawnEvent
                 .builder()
                 .id(this.id)
                 .amount(amount)
                 .build());
     }
 
-    public void apply(FundWithdrawnEvent event){
+    public void apply(AccountFundWithdrawnEvent event){
         this.id = event.getId();
         this.balance -= event.getAmount();
     }

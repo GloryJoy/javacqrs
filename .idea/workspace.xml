@@ -4,37 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b02fbca7-bb74-425a-a799-85700a23f17e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/api/commands/AccountCommandHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/api/commands/CloseAccountCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/api/commands/CommandHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/api/commands/DepositFundCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/api/commands/OpenAccountCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/api/commands/WithdrawFundCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/domain/AccountAggregate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/domain/EventStoreRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/infrastructure/AccountCommandDispatcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/infrastructure/AccountEventProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/infrastructure/AccountEventSourcingHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/infrastructure/AccountEventStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account.command/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account.common/src/main/java/com/joyful/java/cqrs/account/common/dto/AccountType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account.common/src/main/java/com/joyful/java/cqrs/account/common/events/AccountClosedEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account.common/src/main/java/com/joyful/java/cqrs/account/common/events/AccountDepositedEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account.common/src/main/java/com/joyful/java/cqrs/account/common/events/AccountOpenedEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account.common/src/main/java/com/joyful/java/cqrs/account/common/events/FundWithdrawnEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account.query/src/main/java/com/joyful/java/cqrs/account/query/domain/AccountRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account.query/src/main/java/com/joyful/java/cqrs/account/query/domain/BankAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account.query/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="b02fbca7-bb74-425a-a799-85700a23f17e" name="Changes" comment="Initial Commit">
+      <change afterPath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/api/controller/CloseAccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/api/controller/DepositFundController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/api/controller/OpenAccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/api/controller/WithdrawFundController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/api/dto/OpenAccountResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.common/src/main/java/com/joyful/java/cqrs/account/common/dto/BaseResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.query/src/main/java/com/joyful/java/cqrs/account/query/infrastructure/AccountEventHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.query/src/main/java/com/joyful/java/cqrs/account/query/infrastructure/EventHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.query/src/main/java/com/joyful/java/cqrs/account/query/infrastructure/consumer/AccountEventConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.query/src/main/java/com/joyful/java/cqrs/account/query/infrastructure/consumer/EventConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/api/commands/DepositFundCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/api/commands/DepositFundCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/api/commands/WithdrawFundCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/api/commands/WithdrawFundCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/domain/AccountAggregate.java" beforeDir="false" afterPath="$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/domain/AccountAggregate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account.common/src/main/java/com/joyful/java/cqrs/account/common/events/AccountDepositedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/account.common/src/main/java/com/joyful/java/cqrs/account/common/events/AccountFundDepositedEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account.common/src/main/java/com/joyful/java/cqrs/account/common/events/FundWithdrawnEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/account.common/src/main/java/com/joyful/java/cqrs/account/common/events/AccountFundWithdrawnEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account.query/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/account.query/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account.query/src/test/java/com/joyful/java/cqrs/account/query/QueryApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +33,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -63,7 +51,7 @@
     </option>
     <option name="myId2Visible">
       <map>
-        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
@@ -87,24 +75,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "/Volumes/Joy/projects/java/CQRS/bank-account/account.query/src/main/java/com/joyful/java/cqrs/account/query",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "file.status.colors",
-    "show.migrate.to.gradle.popup": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Volumes/Joy/projects/java/CQRS/bank-account/account.query/src/main/java/com/joyful/java/cqrs/account/query&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;file.status.colors&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/account.query/src/main/java/com/joyful/java/cqrs/account/query" />
     </key>
+  </component>
+  <component name="RunManager" selected="Application.Command">
+    <configuration name="Command" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="temurin-19" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.joyful.java.cqrs.account.command.CommandApplication" />
+      <module name="account.command" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Query" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="temurin-19" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.joyful.java.cqrs.account.query.QueryApplication" />
+      <module name="account.query" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Command" />
+      <item itemvalue="Application.Query" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -115,6 +127,21 @@
       <option name="presentableId" value="Default" />
       <updated>1672646924438</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial Commit">
+      <created>1673092699617</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673092699617</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial Commit">
+      <created>1673092872552</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673092872552</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,5 +154,45 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/api/controller/OpenAccountController.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/api/controller/DepositFundController.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/api/commands/AccountCommandHandler.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/infrastructure/AccountEventSourcingHandler.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/infrastructure/AccountEventSourcingHandler.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/account.command/src/main/java/com/joyful/java/cqrs/account/command/api/controller/WithdrawFundController.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

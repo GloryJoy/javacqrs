@@ -13,7 +13,7 @@ spring:
   kafka:
     listener:
       ack-mode: MANUAL_IMMEDIATE
-    consumber:
+    consumer:
       bootstrap-servers: localhost:9092
       group-id: bankaccConsumer
       auto-offset-reset: earliest
